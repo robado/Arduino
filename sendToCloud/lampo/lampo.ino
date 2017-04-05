@@ -18,7 +18,7 @@ void loop()
   float temperatureC = (voltage - 0.5) * 100 ;
 
   if (temperatureC < 42 && temperatureC > 10 ) {
-    Serial.print("GET http://api.botbook.com/add/wqNvzOr0Df4/?x=");
+    Serial.print("GET http:// --apibotbookaddress-- ");
     Serial.println(temperatureC);
     delay(10000);
   }
